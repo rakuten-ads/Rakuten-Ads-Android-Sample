@@ -35,7 +35,7 @@ internal class RecyclerViewActivity : AppCompatActivity() {
         title = "Multiple Banner Ads in RecyclerView"
 
         binding.recyclerView.apply {
-            val data = combineData(generateListData(), ADSPOT_IDS.toAdsDataList(), 8)
+            val data = combineData(generateListData(), ADSPOT_IDS.toAdsDataList(), INTERVAL)
             adapter = RecyclerViewAdapter(data)
         }
     }
