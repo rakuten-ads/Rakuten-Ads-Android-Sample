@@ -79,6 +79,10 @@ internal class ADRecyclerViewAdapter(
                 }
             }
         }
+
+        override fun onClick(view: View?) {
+            // Detect a click
+        }
     }
 
     init {
