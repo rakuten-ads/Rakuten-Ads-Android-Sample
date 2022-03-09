@@ -22,7 +22,7 @@ import com.squareup.picasso.Picasso
 
 internal class RecyclerViewActivity : AppCompatActivity() {
 
-    private val ADSPOT_IDS = arrayOf("", "", "")
+    private val ADSPOT_IDS = arrayOf("1502", "1601", "1602")
     private val INTERVAL = 10
 
     private val binding: ActivityMultipleBannerRecyclerviewBinding by lazy {
