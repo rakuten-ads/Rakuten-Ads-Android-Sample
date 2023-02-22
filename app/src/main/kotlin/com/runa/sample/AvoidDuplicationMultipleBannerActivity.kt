@@ -28,7 +28,7 @@ import com.squareup.picasso.Picasso
  */
 internal class AvoidDuplicationRecycerViewActivity : AppCompatActivity() {
 
-    private val ADSPOT_IDS = arrayOf("", "", "")
+    private val ADSPOT_IDS = arrayOf("18261", "18262", "18269")
     private val INTERVAL = 10
 
     private val binding: ActivityMultipleBannerRecyclerviewBinding by lazy {
@@ -68,7 +68,7 @@ internal class ADRecyclerViewAdapter(
             view?.visibility = View.GONE
         }
 
-        override fun onAllLoadsFinished(adLoader: AdLoader, loadedAdViews: List<AdView>?) {
+        override fun onAllLoadsFinished(adLoader: AdLoader, loadedAdViews: List<AdView>) {
             loadedAdViews?.let {
                 it.forEach { adView ->
                     items.forEach { data ->
@@ -80,7 +80,7 @@ internal class ADRecyclerViewAdapter(
             }
         }
 
-        override fun onClick(view: View?) {
+        override fun onClick(view: View?, errorState: ErrorState?) {
             // Detect a click
         }
     }
