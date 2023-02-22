@@ -39,6 +39,10 @@ class MenuActivity : AppCompatActivity() {
         binding.scrollableBannerAvoidDuplication.setOnClickListener {
             AvoidDuplicationRecycerViewActivity.launch(this)
         }
+
+        binding.pointClubSampleBanner.setOnClickListener {
+            PointClubSampleActivity.launch(this)
+        }
     }
 
 }

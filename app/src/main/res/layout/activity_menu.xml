@@ -56,8 +56,16 @@
             style="@style/runa_app.Button"
             android:text="Ads in the list with avoiding duplication"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/scrollable_banner" />
+            app:layout_constraintTop_toBottomOf="@id/scrollable_banner"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/pointClubSample_banner"
+            style="@style/runa_app.Button"
+            android:text="Point Club Sample Banner"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scrollable_banner_avoid_duplication"
+            app:layout_constraintRight_toRightOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
