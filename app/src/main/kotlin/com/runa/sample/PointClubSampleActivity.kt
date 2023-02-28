@@ -2,6 +2,7 @@ package com.runa.sample
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -20,7 +21,7 @@ import com.squareup.picasso.Picasso
 
 internal class PointClubSampleActivity : AppCompatActivity() {
 
-    private val ADSPOT_IDS = arrayOf("18261")
+    private val ADSPOT_IDS = arrayOf("21881")
     private val INTERVAL = 10
 
     private val binding: ActivityMultipleBannerRecyclerviewBinding by lazy {
@@ -73,7 +74,6 @@ internal class PointClubSampleActivity : AppCompatActivity() {
                 }
                 ContentType.AD -> (bind as ListRowAdsBinding).apply {
                     label.visibility = View.GONE
-                    title.visibility = View.VISIBLE
                     title.text = "Checked Productes on Rakuten Ichiba"
                     data.adsData?.let { ad ->
                         adview.apply {
@@ -83,15 +83,14 @@ internal class PointClubSampleActivity : AppCompatActivity() {
 
                                 override fun onLoadSuccess(view: View?) {
                                     progress.visibility = View.GONE
+                                    title.visibility = View.VISIBLE
+                                    adFrame.setBackgroundColor(Color.parseColor("#FFFFFF"))
                                 }
 
                                 override fun onLoadFailure(view: View?, errorState: ErrorState) {
-                                    label.visibility = View.GONE
-                                    adview.visibility = View.GONE
-                                    progress.visibility = View.GONE
                                     adArea.visibility = View.GONE
-                                    errorInfo.visibility = View.VISIBLE
-                                    errorInfo.text = errorState.toString()
+                                    title.visibility = View.GONE
+//                                    errorInfo.text = errorState.toString()
                                 }
                             }
                             show()
