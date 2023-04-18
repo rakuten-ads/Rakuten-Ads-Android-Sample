@@ -33,11 +33,15 @@ class MenuActivity : AppCompatActivity() {
         }
 
         binding.scrollableBanner.setOnClickListener {
-            RecyclerViewActivity.launch(this)
+            RecyclerViewSampleActivity.launch(this)
         }
 
         binding.scrollableBannerAvoidDuplication.setOnClickListener {
             AvoidDuplicationRecycerViewActivity.launch(this)
+        }
+
+        binding.recyclerWithScrollableHorizontalBanner.setOnClickListener {
+            RecyclerViewSample2Activity.launch(this)
         }
     }
 

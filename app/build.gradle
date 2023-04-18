@@ -55,7 +55,8 @@ repositories {
 dependencies {
 
     /** Import Runa SDK */
-    implementation 'com.rakuten.android.ads:runa:1.7.0'
+    implementation 'com.rakuten.android.ads:runa:1.8.1'
+    implementation 'com.rakuten.android.ads:runa-extension:1.8.1'
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'

@@ -54,7 +54,7 @@ class MultipleBannerActivity: AppCompatActivity() {
 
         AdView(this@MultipleBannerActivity).apply {
             // [Required] Please specify the ad ID issued on the dashboard
-            adSpotId = ""
+            adSpotId = "21881"
             adStateListener = object: AdStateListener() {
                 override fun onLoadSuccess(view: View?) {
                 }

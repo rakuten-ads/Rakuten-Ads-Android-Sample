@@ -32,12 +32,17 @@
             android:exported="false" />
 
         <activity
-            android:name=".RecyclerViewActivity"
+            android:name=".RecyclerViewSampleActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
 
         <activity
             android:name=".AvoidDuplicationRecycerViewActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+
+        <activity
+            android:name=".RecyclerViewSample2Activity"
             android:screenOrientation="portrait"
             android:exported="false" />
 

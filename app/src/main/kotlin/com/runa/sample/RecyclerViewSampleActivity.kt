@@ -12,7 +12,6 @@ import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
 import com.rakuten.android.ads.runa.AdLoaderStateListener
 import com.rakuten.android.ads.runa.ErrorState
-import com.runa.sample.R
 import com.runa.sample.databinding.ActivityMultipleBannerRecyclerviewBinding
 import com.runa.sample.databinding.ListRowAdsBinding
 import com.runa.sample.databinding.ListRowContentBinding
@@ -20,9 +19,9 @@ import com.runa.sample.ContentType.AD
 import com.runa.sample.ContentType.CONTENT
 import com.squareup.picasso.Picasso
 
-internal class RecyclerViewActivity : AppCompatActivity() {
+internal class RecyclerViewSampleActivity : AppCompatActivity() {
 
-    private val ADSPOT_IDS = arrayOf("18261", "18262", "18269")
+    private val ADSPOT_IDS = arrayOf("21881", "18261", "18262", "18269")
     private val INTERVAL = 10
 
     private val binding: ActivityMultipleBannerRecyclerviewBinding by lazy {
@@ -42,7 +41,7 @@ internal class RecyclerViewActivity : AppCompatActivity() {
 
     companion object {
         internal fun launch(context: Context) =
-            context.startActivity(Intent(context, RecyclerViewActivity::class.java))
+            context.startActivity(Intent(context, RecyclerViewSampleActivity::class.java))
     }
 }
 
