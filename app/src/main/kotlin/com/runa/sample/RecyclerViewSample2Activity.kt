@@ -21,6 +21,21 @@ import com.runa.sample.ContentType.AD
 import com.runa.sample.ContentType.CONTENT
 import com.squareup.picasso.Picasso
 
+
+/**
+ * Overview:
+ *  RecyclerView interferes with ad scrolling when a horizontally scrollable ad is displayed in RecyclerView.
+ * The implementation sample of the function to solve the problem is described below.
+ *
+ * Requirement SDK version:
+ *  - 'com.rakuten.android.ads:runa:1.8.1'
+ *  - 'com.rakuten.android.ads:runa-extension:1.8.1'
+ *
+ *
+ * AdViewHelper.ScrollableListener is for detecting scrolling in ads.
+ * And this class does the processing to stop the vertical scrolling of the RecyclerView while scrolling within the ad.
+ *
+ */
 internal class RecyclerViewSample2Activity : AppCompatActivity() {
 
     private val ADSPOT_IDS = arrayOf("21881")
@@ -42,7 +57,6 @@ internal class RecyclerViewSample2Activity : AppCompatActivity() {
 
             /**
              * This ScrollableListener for detecting scrolling of ads that can be scrolled horizontally and instructing LayoutManager to scroll.
-             * ※ Requirement : Implementation 'com.rakuten.android.ads:runa-extension:1.8.1~'
              */
             scrollableListener = object : AdViewHelper.ScrollableListener {
                 override fun onScrollable(isScrollEnabled: Boolean) {
@@ -134,7 +148,6 @@ internal class RecyclerViewAdapterSample2(
 
                         /**
                          * Set a Listener to detect scrolling within an ad.
-                         * ※ Requirement : Implementation 'com.rakuten.android.ads:runa-extension:1.8.1~'
                          */
                         listener?.let {
                             AdViewHelper.RecyclerViewController(adView = this).execute(listener = it)
