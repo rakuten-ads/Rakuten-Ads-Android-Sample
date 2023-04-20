@@ -3,69 +3,90 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/purple_200"
-        tools:context=".MenuActivity"
-        tools:showIn="@layout/activity_menu">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/label_single_ad"
-            style="@style/runa_app.LabelText"
-            android:text="Single Banner Ad"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/single_banner" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple_200"
+            tools:context=".MenuActivity"
+            tools:showIn="@layout/activity_menu">
 
-        <Button
-            android:id="@+id/single_banner"
-            style="@style/runa_app.Button"
-            android:text="Single Banner Ad"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/label_single_ad"
-            app:layout_constraintRight_toRightOf="parent" />
+            <TextView
+                android:id="@+id/label_single_ad"
+                style="@style/runa_app.LabelText"
+                android:text="-- Single Banner Ad --"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/single_banner"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/label_multiple_ads"
-            style="@style/runa_app.LabelText"
-            android:text="Multiple Banner Ads"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/single_banner"
-            app:layout_constraintRight_toRightOf="parent" />
+            <Button
+                android:id="@+id/single_banner"
+                style="@style/runa_app.Button"
+                android:text="Single Banner Ad"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/label_single_ad" />
 
-        <Button
-            android:id="@+id/multiple_banner"
-            style="@style/runa_app.Button"
-            android:text="Multiple Banner Ads"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/label_multiple_ads"
-            app:layout_constraintRight_toRightOf="parent"/>
+            <Button
+                android:id="@+id/nestedScrollView_sample"
+                style="@style/runa_app.Button"
+                android:text="NestedScrollView with Scrollable horizontal banner"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/single_banner" />
 
-        <Button
-            android:id="@+id/scrollable_banner"
-            style="@style/runa_app.Button"
-            android:text="Ads in the list"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/multiple_banner"
-            app:layout_constraintRight_toRightOf="parent" />
+            <TextView
+                android:id="@+id/label_multiple_ads"
+                style="@style/runa_app.LabelText"
+                android:text="-- Multiple Banner Ads --"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nestedScrollView_sample" />
 
-        <Button
-            android:id="@+id/scrollable_banner_avoid_duplication"
-            style="@style/runa_app.Button"
-            android:text="Ads in the list with avoiding duplication"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/scrollable_banner" />
+            <Button
+                android:id="@+id/multiple_banner"
+                style="@style/runa_app.Button"
+                android:text="Multiple Banner Ads"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/label_multiple_ads" />
 
-        <Button
-            android:id="@+id/recycler_with_scrollable_horizontal_banner"
-            style="@style/runa_app.Button"
-            android:text="RecyclerView with Scrollable horizontal banner"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/scrollable_banner_avoid_duplication" />
+            <Button
+                android:id="@+id/scrollable_banner"
+                style="@style/runa_app.Button"
+                android:text="Ads in the list"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/multiple_banner" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/scrollable_banner_avoid_duplication"
+                style="@style/runa_app.Button"
+                android:text="Ads in the list with avoiding duplication"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scrollable_banner" />
+
+            <Button
+                android:id="@+id/recycler_with_scrollable_horizontal_banner"
+                style="@style/runa_app.Button"
+                android:text="RecyclerView with Scrollable horizontal banner"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scrollable_banner_avoid_duplication" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/transparent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recycler_with_scrollable_horizontal_banner" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </layout>

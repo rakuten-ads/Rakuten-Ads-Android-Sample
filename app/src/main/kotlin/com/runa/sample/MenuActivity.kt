@@ -28,6 +28,10 @@ class MenuActivity : AppCompatActivity() {
             SingleBannerActivity.launch(this)
         }
 
+        binding.nestedScrollViewSample.setOnClickListener {
+            NestedScrollViewSampleActivity.launch(this)
+        }
+
         binding.multipleBanner.setOnClickListener {
             MultipleBannerActivity.launch(this)
         }
