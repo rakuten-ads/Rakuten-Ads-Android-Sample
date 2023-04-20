@@ -41,7 +41,7 @@ class MenuActivity : AppCompatActivity() {
         }
 
         binding.scrollableBannerAvoidDuplication.setOnClickListener {
-            AvoidDuplicationRecycerViewActivity.launch(this)
+            AvoidDuplicationRecyclerViewActivity.launch(this)
         }
 
         binding.recyclerWithScrollableHorizontalBanner.setOnClickListener {

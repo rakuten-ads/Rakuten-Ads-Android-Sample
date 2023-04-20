@@ -37,7 +37,7 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".AvoidDuplicationRecycerViewActivity"
+            android:name=".AvoidDuplicationRecyclerViewActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 

@@ -15,7 +15,6 @@ import com.rakuten.android.ads.runa.AdLoader
 import com.rakuten.android.ads.runa.AdLoaderStateListener
 import com.rakuten.android.ads.runa.AdView
 import com.rakuten.android.ads.runa.ErrorState
-import com.runa.sample.R
 import com.runa.sample.databinding.ActivityMultipleBannerRecyclerviewBinding
 import com.runa.sample.databinding.ListRowAds2Binding
 import com.runa.sample.databinding.ListRowContentBinding
@@ -26,7 +25,7 @@ import com.squareup.picasso.Picasso
 /**
  *
  */
-internal class AvoidDuplicationRecycerViewActivity : AppCompatActivity() {
+internal class AvoidDuplicationRecyclerViewActivity : AppCompatActivity() {
 
     private val ADSPOT_IDS = arrayOf("18261", "18262", "18269")
     private val INTERVAL = 10
@@ -53,7 +52,7 @@ internal class AvoidDuplicationRecycerViewActivity : AppCompatActivity() {
 
     companion object {
         internal fun launch(context: Context) =
-            context.startActivity(Intent(context, AvoidDuplicationRecycerViewActivity::class.java))
+            context.startActivity(Intent(context, AvoidDuplicationRecyclerViewActivity::class.java))
     }
 }
 
