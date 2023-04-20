@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.rakuten.android.ads.runa.AdStateListener
 import com.rakuten.android.ads.runa.AdView
 import com.rakuten.android.ads.runa.ErrorState
+import com.rakuten.android.ads.runa.key.Config
 import com.runa.sample.databinding.ActivityMultipleBannerBinding
 
 class MultipleBannerActivity: AppCompatActivity() {
@@ -66,6 +67,7 @@ class MultipleBannerActivity: AppCompatActivity() {
                 override fun onClick(view: View?, errorState: ErrorState?) {
                 }
             }
+            putProperty(Config.HardwareAcceleration.key, true)
             binding.bannerAdContainer.addView(this, LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT))
         }.show()
     }
