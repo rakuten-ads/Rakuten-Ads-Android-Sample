@@ -6,7 +6,7 @@
 
 ## Samples by implementation pattern
 
-* **[Single banner ad](/runa.sample/app/src/main/java/com/runa/sample/SingleBannerActivity.kt)**
+* **[Single banner ad](/app/src/main/kotlin/com/runa/sample/SingleBannerActivity.kt)**
 * **[Multiple banner ads](/runa.sample/app/src/main/java/com/runa/sample/MultipleBannerActivity.kt)**
 * **[Multiple banner ads in RecyclerView](/runa.sample/app/src/main/java/com/runa/sample/RecyclerViewActivity.kt)**
 * **[Multiple banner ads in RecyclerView avoiding duplication](/runa.sample/app/src/main/java/com/runa/sample/AvoidDuplicationMultipleBannerActivity.kt)**
