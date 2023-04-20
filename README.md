@@ -7,8 +7,8 @@
 ## Samples by implementation pattern
 
 * **[Single banner ad](/app/src/main/kotlin/com/runa/sample/SingleBannerActivity.kt)**
-* **[Multiple banner ads](/runa.sample/app/src/main/java/com/runa/sample/MultipleBannerActivity.kt)**
-* **[Multiple banner ads in RecyclerView](/runa.sample/app/src/main/java/com/runa/sample/RecyclerViewActivity.kt)**
-* **[Multiple banner ads in RecyclerView avoiding duplication](/runa.sample/app/src/main/java/com/runa/sample/AvoidDuplicationMultipleBannerActivity.kt)**
-* **[RecyclerView with scrollable horizontal banner](/runa.sample/app/src/main/java/com/runa/sample/RecyclerViewSample2Activity.kt)**
-* **[NestedScrollView with scrollable horizontal banner](/runa.sample/app/src/main/java/com/runa/sample/NestedScrollViewSampleActivity.kt)**
+* **[Multiple banner ads](/app/src/main/kotlin/com/runa/sample/MultipleBannerActivity.kt)**
+* **[Multiple banner ads in RecyclerView](/app/src/main/kotlin/com/runa/sample/RecyclerViewActivity.kt)**
+* **[Multiple banner ads in RecyclerView avoiding duplication](/app/src/main/kotlin/com/runa/sample/AvoidDuplicationMultipleBannerActivity.kt)**
+* **[RecyclerView with scrollable horizontal banner](/app/src/main/kotlin/com/runa/sample/RecyclerViewSample2Activity.kt)**
+* **[NestedScrollView with scrollable horizontal banner](/app/src/main/kotlin/com/runa/sample/NestedScrollViewSampleActivity.kt)**
