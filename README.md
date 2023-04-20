@@ -10,4 +10,5 @@
 * **[Multiple banner ads](/runa.sample/app/src/main/java/com/runa/sample/MultipleBannerActivity.kt)**
 * **[Multiple banner ads in RecyclerView](/runa.sample/app/src/main/java/com/runa/sample/RecyclerViewActivity.kt)**
 * **[Multiple banner ads in RecyclerView avoiding duplication](/runa.sample/app/src/main/java/com/runa/sample/AvoidDuplicationMultipleBannerActivity.kt)**
-
+* **[RecyclerView with scrollable horizontal banner](/runa.sample/app/src/main/java/com/runa/sample/RecyclerViewSample2Activity.kt)**
+* **[NestedScrollView with scrollable horizontal banner](/runa.sample/app/src/main/java/com/runa/sample/NestedScrollViewSampleActivity.kt)**
